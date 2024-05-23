@@ -23,7 +23,7 @@
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/sensors_track.png)\
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/sensors_surface.png)\
    \
-При помощи Unity ML-Agents и Imitation Learning агент обучался проходить трек, преодолевая максимальное число чекпоинтов по очереди, избегая при этом столкновения со стенами.
+При помощи Unity ML-Agents и Imitation Learning агент обучался проходить трек, преодолевая максимальное число чекпоинтов по очереди, избегая при этом столкновения со стенами и отличающимся типом поверхности ("песком").
 
 # Запуск и использование
 Работа является проектом, разработанным в Unity. Для запуска необходимо скачать репозиторий и открыть его через Unity Hub. Собранная тестовая сцена находится по пути ***Assets/Scenes/SampleScene.unity*** и содержит среду обучения из Обзора.
