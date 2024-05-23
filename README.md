@@ -8,6 +8,7 @@
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/architecture.png)\
    *Созданная архитектура эволюционной модели* \
    \
+   \
 Среда обучения в движке Unity была создана для обучения ИИ для игр жанра "гонки". На сцене Unity размещён гоночный трек, состоящий из следующих компонентов:
 1. Агент (машина);
 2. Визуальная часть трека;
@@ -18,16 +19,20 @@
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/track.png)\
    *Среда обучения агента - гоночный трек*\
    \
+   \
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/learning_environment.png)\
    *Элементы среды обучения агента*\
+   \
    \
 Для отслеживания состояния среды агентом использовалось два вида пространственных сенсоров: сенсоры границ трека и сенсоры поверхности.\
 \
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/sensors_track.png)\
    *Пространственные сенсоры*\
    \
+   \
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/sensors_surface.png)\
    *Сенсоры поверхности*\
+   \
    \
 При помощи Unity ML-Agents и Imitation Learning агент обучался проходить трек, преодолевая максимальное число чекпоинтов по очереди, избегая при этом столкновения со стенами и отличающимся типом поверхности ("песком").
 
