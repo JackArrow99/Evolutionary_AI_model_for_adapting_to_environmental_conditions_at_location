@@ -6,7 +6,7 @@
 # Обзор
 Эволюционная модель представляет собой построенный в соответствии с приведённой ниже архитектурой инструмент. При построении могут быть использованы программные средства, выполняющие соответствующие функции блоков архитектуры. В данной работе для построения модели в качестве среды обучения использовался игровой движок Unity, а в качестве нейросети - Unity ML-Agents. Качественная оценка производилась непосредственно с учётом опыта игрока.\
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/architecture.png)\
-   *Созданная архитектура эволюционной модели* 
+   *Созданная архитектура эволюционной модели* \
    \
 Среда обучения в движке Unity была создана для обучения ИИ для игр жанра "гонки". На сцене Unity размещён гоночный трек, состоящий из следующих компонентов:
 1. Агент (машина);
@@ -17,7 +17,6 @@
    \
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/track.png)\
    *Среда обучения агента - гоночный трек*\
-   \
    \
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/learning_environment.png)\
    *Элементы среды обучения агента*\
