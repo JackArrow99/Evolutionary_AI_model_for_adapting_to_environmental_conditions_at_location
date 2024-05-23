@@ -18,6 +18,7 @@
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/track.png)\
    *Среда обучения агента - гоночный трек*\
    \
+   \
    ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/learning_environment.png)\
    *Элементы среды обучения агента*\
    \
