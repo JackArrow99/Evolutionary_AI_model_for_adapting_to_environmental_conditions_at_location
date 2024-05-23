@@ -24,7 +24,7 @@
 2. Визуальная часть трека;
 3. Стены трека;
 4. Чекпоинты;
-5. Зоны отличающейся поверхности трека.
+5. Зоны отличающейся поверхности трека.\
 <br /> Для отслеживания состояния среды агентом использовалось два вида пространственных сенсоров: сенсоры границ трека и сенсоры поверхности.\
 \
 ![Image alt](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/raw/main/pictures/sensors_track.png)\
