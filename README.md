@@ -5,7 +5,8 @@
 
 # Обзор
 Эволюционная модель представляет собой построенный в соответствии с приведённой ниже архитектурой инструмент. При построении могут быть использованы программные средства, выполняющие соответствующие функции блоков архитектуры. В данной работе для построения модели в качестве среды обучения использовался игровой движок Unity, а в качестве нейросети - Unity ML-Agents. Качественная оценка производилась непосредственно с учётом опыта игрока.\
-   <рисунок архитектуры>
+   ![alt text](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/tree/main/pictures/Созданная архитектура модели - для Unity.png)\
+   \
 Среда обучения в движке Unity была создана для обучения ИИ для игр жанра "гонки". На сцене Unity размещён гоночный трек, состоящий из следующих компонентов:
 1. Агент (машина);
 2. Визуальная часть трека;
@@ -13,10 +14,12 @@
 4. Чекпоинты;
 5. Зоны отличающейся поверхности трека.\
    \
-   <рисунок трека и среды>\
+   ![alt text](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/tree/main/pictures/трек.png)
+   ![alt text](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/tree/main/pictures/среда обучения.png)
    \
 Для отслеживания состояния среды агентом использовалось два вида пространственных сенсоров: сенсоры границ трека и сенсоры поверхности.\
-   <рисунок сенсоров>\
+   ![alt text](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/tree/main/pictures/сенсоры трека.png)\
+   ![alt text](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/tree/main/pictures/сенсоры поверхности.png)\
    \
 При помощи Unity ML-Agents и Imitation Learning агент обучался проходить трек, преодолевая максимальное число чекпоинтов по очереди, избегая при этом столкновения со стенами.
 
@@ -25,7 +28,7 @@
 
 ## Основные компоненты
 Для обучения нового экземпляра ИИ для игры жанра "гонки" небходимо создать на сцене объект игрока и подключить его контроллер к агенту, добавив ссылку на контроллер в соответствующее поле. Подключение контроллера, отличного от приведённого в работе, потребует модификации скрипта ***CarAgent***. В скрипте должна быть добавлена возможность управлять конроллером при помощи функции *Heuristics*. После подключения контроллера необходимо провести настройку компонентов ***Behavior Parameters***, ***Decigion Requester***, а также обоих видов ***Ray Perception Sensor*** в соответствии с игровыми задачами симуляции. Подробнее о настройке компонентов Unity ML-Agents можно прочесть на официальном сайте: [Unity ML-Agents Toolkit](https://unity-technologies.github.io/ml-agents/)\
-   <рисунок с настройкой CarAgent>
+   ![alt text](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/tree/main/pictures/Car Agent Script.png)
 
 ## Запись демонстраций с использованием Imitation Learning
 Перед началом обучения необходимо записать демонстрацию при помощи компонента ***Demonstration Recorder***. Для этого его нужно перевести в режим записи, отметив флажком поле "Record". Поле "Num Steps To Record" заполняется в соответствии с игровыми задачами симуляции. Поле *Demonstration Name* заполняется в соответствии с названием поведения, используемым при дальнейшем обучении. В поле *Demonstration Directory* указывается директория, в которую будут сохраняться будущие демонстрации. Также в компоненте ***Behavior Parameters*** необходимо выбрать в поле *Behavior Type* значение "Inference Only".\
