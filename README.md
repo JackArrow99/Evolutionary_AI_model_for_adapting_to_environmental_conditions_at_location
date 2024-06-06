@@ -74,4 +74,4 @@ mlagents-learn Config\Test_Config.yaml --run-id=Test
 
 # Дополнительно
 Автор: Андреев Сергей\
-Полный текст работы можно найти [на Github](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/tree/main).
+Полный текст работы можно найти [на Github](https://github.com/JackArrow99/Evolutionary_AI_model_for_adapting_to_environmental_conditions_at_location/blob/main/ВКР_Андреев%20СС.pdf).
